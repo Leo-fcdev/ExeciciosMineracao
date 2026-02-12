@@ -14,12 +14,12 @@ ler os cinco preços, calcular a média e exibir o resultado.
 
 produto = input("Qual é o produto?")
 
-preco = []
+soma = 0
 
 for i in range(5):
     valor = float(input("Qual o valor do produto?"))
-    preco.append(valor)
+    soma += valor
 
-media = sum(preco) / len(preco)
+media = soma / 5
 
 print(f"\nO preço médio do {produto} é: R$ {media:.2f}")
